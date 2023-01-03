@@ -21,7 +21,7 @@ def dar_pistas(jugada, num_secreto):
     for i in range(len(jugada)):
         if jugada[i] == num_secreto[i]:
             pistas.append('Fama')
-        elif jugada in num_secreto:
+        elif jugada[i] in num_secreto:
             pistas.append('Punto')
     if len(pistas) == 0:
         return 'La Nada'
